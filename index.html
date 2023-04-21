@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Santander</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .caixa {
+            padding: 25px;
+            /*ESPAÇAMENTO INTERNO*/
+        }
+
+        .logo {
+            width: 130px;
+            /* Largura*/
+        }
+
+        .link-empresa {
+            color: #000000;
+            margin-left: 30px;
+            /*MARGEM DO LADO ESQUERDO*/
+            font-size: 20px;
+            /*TAMANHO DA FONTE*/
+            cursor: pointer;
+            /*TROCA O CURSOR DO MOUSE POR UMA MÃOZINHA*/
+        }
+
+        .link-empresa:hover {
+            text-decoration: underline;
+            /*TRACEJADO EMBAIXO DA ESCRITA*/
+        }
+
+        .link-voce {
+            color: #ff0000;
+            margin-left: 30px;
+            /*MARGEM DO LADO ESQUERDO*/
+            font-size: 20px;
+            /*TAMANHO DA FONTE*/
+            font-weight: bold;
+            /*GROSSURA DA FONTE SÓ NÚMEROSA OOU NOMES */
+            cursor: pointer;
+            /*TROCA O CURSOR DO MOUSE POR UMA MÃOZINHA*/
+
+        }
+
+        .link-voce:hover {
+            text-decoration: underline;
+            /*TRACEJADO EMBAIXO DA ESCRITA*/
+        }
+
+        .background {
+            background-size: cover;
+        }
+
+        h3 {
+            margin-left: 200px;
+            /*MARGEM DO LADO ESQUERDO*/
+            margin-top: 60px;
+            /*MARGEM EM CIMA*/
+            font-size: 40px;
+            
+        }
+
+        UL {
+            display: flex;/*DISPLAY FLEX DA UM AJUSTE E MAIS PROPRIEDADES*/
+            justify-content: center;
+            gap: 30px;/*ELE FAZ UM ESPAÇAMENTO ENTRE OS ITENS*/
+            margin-top: 50px;/*MARGEM EM CIMA*/
+        }
+
+        li {
+            height: 150px;
+            /*ALTURA DO ELEMENTO*/
+            width: 190px;
+            /*LARGURA DO ELEMENTO*/
+            box-shadow: rgb(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding-top: 30px;
+            /*ESPAÇAMENTO INTERNO DE CIMA*/
+            display: inline-block;
+        }
+
+        .imagem-produtos {
+            width: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            /*COLOCA A IMAGEM NO CENTRO APÓS AS MARGINS LEFT E RIGHT EM AUTO*/
+            
+        }
+
+        p {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="caixa">
+        <img class="logo" src="img/logo-santander.svg" alt="logo-santander">
+
+        <a class="link-voce">Para Você</a>
+
+        <a class="link-empresa">Para sua Empresa</a>
+    </div>
+    <img class="background" src="img/background.png" alt="logo-santander">
+
+    <h3>Dá uma olhadinha em tudo que temos</h3>
+
+    <ul>
+        <li>
+            <img src="./img/icon-abra-sua-conta.svg" alt="logo" class="imagem-produtos">
+            <p>Abra sua conta</p>
+        </li>
+        <li>
+            <img src="./img/capitalgiro.svg" alt="logo" class="imagem-produtos">
+            <p>Capital de Giro</p>
+        </li>
+        <li>
+            <img src="./img/icon-peca-seu-cartao.svg" alt="logo" class="imagem-produtos">
+            <p>Cartões</p>
+        </li>
+        <li>
+            <img src="./img/pagamentos.svg" alt="logo" class="imagem-produtos">
+            <p>Pagamentos</p>
+        </li>
+        <li>
+            <img src="./img/icon-maquina-getnet.svg" alt="logo" class="imagem-produtos">
+            <p>Máquina GetNet</p>
+        </li>
+        <li>
+            <img src="./img/icon-renegocie-sua-divida.svg" alt="logo" class="imagem-produtos">
+            <p>Renegociação de Dívida</p>
+        </li>
+    </ul>
+</body>
+
+</html>
